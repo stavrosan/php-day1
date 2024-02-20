@@ -38,18 +38,18 @@ $cars = array(
 </head>
 <body>
     <div class="row row-cols-lg-3 row-cols-md-2">
+     <div class="card mx-auto" style="width: 18rem;">
+      <div class="card-body">
+        <img src="<?=$cars["Toyota"]["Image"]?>" class="card-img-top" alt="...">
+        <h5 class="card-title"><?="Toyota {$cars["Toyota"]["Model"]}"?></h5>
+        <p class="card-text"><?="Price: {$cars["Toyota"]["Price"]} € "?></p>
+        <p class="card-text">Availability: <?=$cars["Toyota"]["Availability"]?"Yes":"None"?></p>
+        <p class="card-text"><?="Where: {$cars["Toyota"]["Rental location"]} "?></p>
+      </div>
+    </div>
 <div class="card mx-auto" style="width: 18rem;">
   <div class="card-body">
-    <img src="<?=$cars["Toyota"]["Image"]?>" class="card-img-top" alt="...">
-    <h5 class="card-title"><?="Toyota {$cars["Toyota"]["Model"]}"?></h5>
-    <p class="card-text"><?="Price: {$cars["Toyota"]["Price"]} € "?></p>
-    <p class="card-text">Availability: <?=$cars["Toyota"]["Availability"]?"Yes":"None"?></p>
-    <p class="card-text"><?="Where: {$cars["Toyota"]["Rental location"]} "?></p>
-  </div>
-</div>
-<div class="card mx-auto" style="width: 18rem;">
-  <div class="card-body">
-  <img src="<?=$cars["Ford"]["Image"]?>" class="card-img-top" alt="...">
+    <img src="<?=$cars["Ford"]["Image"]?>" class="card-img-top" alt="...">
     <h5 class="card-title"><?="Ford {$cars["Ford"]["Model"]}"?></h5>
     <p class="card-text"><?="Price: {$cars["Ford"]["Price"]} €"?></p>
     <p class="card-text">Availability: <?=$cars["Ford"]["Availability"]?"Yes":"None"?></p>
@@ -58,7 +58,7 @@ $cars = array(
 </div>
 <div class="card m-auto" style="width: 18rem;">
   <div class="card-body">
-  <img src="<?=$cars["Opel"]["Image"]?>" class="card-img-top" alt="...">
+    <img src="<?=$cars["Opel"]["Image"]?>" class="card-img-top" alt="...">
     <h5 class="card-title"><?="Opel {$cars["Opel"]["Model"]}"?></h5>
     <p class="card-text"><?="Price: {$cars["Opel"]["Price"]} €"?></p>
     <p class="card-text">Availability: <?=$cars["Opel"]["Availability"]?"Yes":"None"?></p>
